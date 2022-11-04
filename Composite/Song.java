@@ -1,6 +1,6 @@
 package Composite;
 
-public class Song {
+public class Song implements PlayComponent{
     String name;
     String artist;
     public Song(String name, String artist) {
@@ -16,7 +16,8 @@ public class Song {
         return artist;
     }
 
-    public String formatArtistName(){
-        return "Escuchando..."+this.name+" BY "+this.artist;
+    @Override
+    public void play() {
+        System.out.println("Escuchando..."+getName()+" BY "+getArtist());
     }
 }
