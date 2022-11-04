@@ -1,4 +1,4 @@
-package Composite;
+package Composite_Decorator;
 
 import java.util.ArrayList;
 
