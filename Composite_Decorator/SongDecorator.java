@@ -11,6 +11,6 @@ public class SongDecorator implements PlayComponent {
     @Override
     public void play(){
         c.play();
-
     }
+
 }

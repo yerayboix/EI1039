@@ -9,6 +9,10 @@ public class SongConcreteDecoratorMP4 extends SongDecorator {
     @Override
     public void play(){
         super.play();
-        System.out.println("ON MP4");
+        System.out.println(extra());
+    }
+
+    public String extra(){
+        return "ON MP4";
     }
 }
