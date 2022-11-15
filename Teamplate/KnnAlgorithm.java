@@ -1,15 +1,12 @@
 package Teamplate;
 
 public abstract class KnnAlgorithm {
-
     public final void executeAlgorithm(){
         lookData();
         calculateDistances();
         findNeighbours();
         voteLabels();
     }
-
-
     public abstract void lookData();
     public final void calculateDistances(){
         System.out.println("Calculating distances");
