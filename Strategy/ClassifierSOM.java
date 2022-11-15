@@ -1,17 +1,22 @@
 package Strategy;
 
 public class ClassifierSOM implements Strategy {
-    String metrica;
+    Metrica metrica;
 
-    public ClassifierSOM(String metrica) {
+    public ClassifierSOM(Metrica metrica) {
         this.metrica = metrica;
     }
+
+    public ClassifierSOM() {
+    }
+
 
     @Override
     public void execute() {
         if(metrica != null){
-            System.out.println(metrica+" computed");
+            metrica.compute();
         }
         System.out.println("ClassifierSOM executed");
     }
+
 }

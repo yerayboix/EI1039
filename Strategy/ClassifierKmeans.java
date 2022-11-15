@@ -1,17 +1,21 @@
 package Strategy;
 
 public class ClassifierKmeans implements Strategy{
-    String metrica;
+    Metrica metrica;
 
-    public ClassifierKmeans(String metrica) {
+    public ClassifierKmeans(Metrica metrica) {
         this.metrica = metrica;
+    }
+
+    public ClassifierKmeans() {
     }
 
     @Override
     public void execute() {
         if(metrica != null){
-            System.out.println(metrica+" computed");
+            metrica.compute();
         }
         System.out.println("ClassifierKmeans executed");
     }
+
 }

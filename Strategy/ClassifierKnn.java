@@ -1,16 +1,19 @@
 package Strategy;
 
 public class ClassifierKnn implements Strategy {
-    String metrica;
+    Metrica metrica;
 
-    public ClassifierKnn(String metrica) {
+    public ClassifierKnn(Metrica metrica) {
         this.metrica = metrica;
+    }
+
+    public ClassifierKnn() {
     }
 
     @Override
     public void execute() {
         if(metrica != null){
-            System.out.println(metrica+" computed");
+            metrica.compute();
         }
         System.out.println("ClassifierKnn executed");
     }
