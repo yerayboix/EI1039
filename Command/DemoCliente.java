@@ -2,6 +2,8 @@ package Command;
 
 public class DemoCliente {
     public static void main(String[] args) {
+        /*Le paso el BeeBotMejorado porque si no tengo que hacer 3 clases mas para los movimientos y al final el BeeBot normal
+        simplemente ejecuta el comando directamente*/
         BeeBot beeBot = new BeeBot();
         BeeBotMejorado beeBotMejorado = new BeeBotMejorado();
         beeBot.setCommand(new MoveForward(beeBotMejorado));
